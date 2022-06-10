@@ -24,6 +24,16 @@ for (let i = 0; i < 2; i++) {
 
     personalMoviesDB.movies[a] = b;
 }
+
+if (personalMoviesDB.count < 10) {
+    console.log('Prosmotreno dovolno malo filmow');
+} else if (personalMoviesDB.count >=10 && personalMoviesDB.count < 30) {
+console.log('Vi klassicheskiy zritel`');
+} else if (personalMoviesDB.count >= 30) {
+    console.log("Vi kinoman!");
+} else {
+    console.log("Proisoshla oshibka")
+}
     
 
 console.log(personalMoviesDB);
