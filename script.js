@@ -1,21 +1,19 @@
 "use strict";
 
-const numberOfFilms = +prompt("Skolko filmov vi uzhe posmotreli?", "");
+let num = 50;
 
-const personalMoviesDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+/* while (num < 55) {
+    console.log(num);
+    num++;
+} */
 
-const a = prompt("Odin iz poslednix filmov?", ""),
-      b = prompt("Na skolko ocenintye ego?", ""),
-      c = prompt("Odin iz poslednix filmov?", ""),
-      d = prompt("Na skolko ocenintye ego?", "");
+/* do{
+    console.log(num);
+    num++;
+}
+while (num < 55); */                 // условие может идти за циклом
 
-personalMoviesDB.movies[a] = b;
-personalMoviesDB.movies[c] = d;
-
-console.log(personalMoviesDB);
+for (let i = 1; i < 0; i++) {         // цикл оринтируется на і и поэтому применяется 7 раз(в даном случае)
+        console.log(num);
+    num++;
+}
